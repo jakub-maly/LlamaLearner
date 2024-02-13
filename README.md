@@ -1,4 +1,4 @@
-## LLAMA learner (dem
+## LLAMA learner (demo)
 *An interactive language learner app.*
 
 Developed during AdaHack 23 to the following challenge: Design a mini-game that uses an open AI chatbot to teach players basic phrases or vocabulary through interactive dialogue.
