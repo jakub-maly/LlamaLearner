@@ -39,12 +39,11 @@ class Interface:
 
         # remove old voice files
         if os.path.exists('voice.mp3'):
-            print('deleted')
             os.remove('voice.mp3')
 
         # generate an English response using the LLM
         # strip the response of non-verbal elements the LLM sometimes creates
-        response = re.sub(r'\*.*?\*', '',
+        response = re.sub(r' \*.*?\*', '',
                           self._chain.invoke({'input': query, 'context': context}))
 
         # pass through the translator to second language then back to English to improve syntax
